@@ -9,7 +9,7 @@ var DEBUG = false;
 
 function fetchNews() {
   
-  var lastUpdate = new Date(PropertiesService.getScriptProperties().getProperty("lastUpdate"));
+  var lastUpdate = new Date(parseFloat(PropertiesService.getScriptProperties().getProperty("lastUpdate")) || 0);
 
   Logger.log("Last update: " + lastUpdate);
   
