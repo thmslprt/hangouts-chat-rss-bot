@@ -28,10 +28,9 @@ function fetchNews() {
     
     var pubDate = new Date(items[i].getChild('pubDate').getText());
     
-    var og = items[i].getChild('og');
-    var title = og.getChild("title").getText();
-    var description = og.getChild("description").getText();
-    var link = og.getChild("url").getText();
+    var title = items[i].getChild("title").getText();
+    var description = items[i].getChild("description").getText();
+    var link = items[i].getChild("link").getText();
     
     if(DEBUG){
       Logger.log("------ " + (i+1) + "/" + items.length + " ------");
