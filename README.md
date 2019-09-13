@@ -20,7 +20,7 @@ This sample uses the Google Cloud Platform blog as an example.
 ## Setup the Google Apps Script
 
 1. Create a new Google Apps Script project
-2. Copy the content of [/Code.gs](/Code.gs) to a file in your Google Apps Script project
+2. Copy the content of [/Code.gs](/Code.gs) (or [/Code-atom.gs](/Code-atom.gs) for Atom feeds) to a file in your Google Apps Script project
 3. Update the WEBHOOK_URL variable with the URL of your webhook (see [Create a Hangouts Chat webhook](#create-a-hangouts-chat-webhook))
 
     <img alt="Update script" src="docs/images/update_script.png" width="800"/>
